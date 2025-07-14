@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import FinancialFilters from './components/FinancialFilters';
-import SectorAnalysis from './components/SectorAnalysis';
 import FinancialStatements from './components/FinancialStatements';
 import './index.css';
 
@@ -31,7 +30,6 @@ function App() {
     <div className="container mx-auto p-4">
       <h1 className="text-4xl font-bold text-center text-blue-600 mb-6">iFind - Análise Financeira</h1>
       <FinancialFilters onFilter={handleFilter} />
-      {/* <SectorAnalysis /> */}
       <FinancialStatements filteredCompanies={filteredCompanies} />
     </div>
   );
